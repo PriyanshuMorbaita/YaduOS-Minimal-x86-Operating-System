@@ -27,10 +27,16 @@ This project is aimed at exploring how real operating systems work — from CPU 
 
 ## 🛠 Build Instructions
 
-To build the OS:
+To Clean the OS:
 ```bash
 make clean
+```
+To Build the OS:
+```bash
 ./build.sh
+```
+To Run the OS:
+```bash
 cd bin
 qemu-system-x86_64 -hda bin/os.bin
 
