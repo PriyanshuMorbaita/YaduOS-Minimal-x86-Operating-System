@@ -148,12 +148,12 @@ void kernel_page(){
 struct TSS tss;
 struct gdt gdt_real[PEACHOS_TOTAL_GDT_SEGMENTS];
 struct gdt_structured gdt_structured[PEACHOS_TOTAL_GDT_SEGMENTS] = {
-    {.base = 0x00, .limit = 0x00, .type = 0x00},                // NULL Segment
-    {.base = 0x00, .limit = 0xffffffff, .type = 0x9a},           // Kernel code segment
-    {.base = 0x00, .limit = 0xffffffff, .type = 0x92},            // Kernel data segment
-    {.base = 0x00, .limit = 0xffffffff, .type = 0xf8},              // User code segment
-    {.base = 0x00, .limit = 0xffffffff, .type = 0xf2},             // User data segment
-    {.base = (uint32_t)&tss, .limit=sizeof(tss), .type = 0xE9}      // TSS Segment
+    {.base = 0x00, .limit = 0x00, .type = 0x00},                
+    {.base = 0x00, .limit = 0xffffffff, .type = 0x9a},           
+    {.base = 0x00, .limit = 0xffffffff, .type = 0x92},            
+    {.base = 0x00, .limit = 0xffffffff, .type = 0xf8},              
+    {.base = 0x00, .limit = 0xffffffff, .type = 0xf2},             
+    {.base = (uint32_t)&tss, .limit=sizeof(tss), .type = 0xE9}      
 };
 
 void kernel_main(){
