@@ -1,9 +1,6 @@
 # YaduOS-Minimal-x86-Operating-System
 YaduOS is a handcrafted operating system for x86, written in C and Assembly, designed to demonstrate core kernel and hardware interaction concepts.
-AquilaOS — Minimal x86 Operating System with Paging, Multitasking, File System, and User Program Execution
-
-About:
-AquilaOS is a handcrafted operating system for x86, written in C and Assembly, designed to demonstrate core kernel and hardware interaction concepts. The project includes:
+YaduOS — Minimal x86 Operating System with Paging, Multitasking, File System, and User Program Execution
 
 Bootloader & GDT/IDT Setup — Custom boot stage with descriptor tables for protected mode.
 
