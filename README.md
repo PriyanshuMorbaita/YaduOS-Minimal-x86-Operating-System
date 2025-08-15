@@ -17,3 +17,20 @@ User Program Execution — Load and run user-level applications in a protected e
 Heap & Memory Management — Kernel heap allocation with paging integration.
 
 This project is aimed at exploring how real operating systems work — from CPU initialization to running user applications — while keeping the code modular and well-structured for learning and experimentation.
+
+
+## 📦 Requirements
+- `make`
+- `nasm`
+- `gcc` (cross-compiler if targeting bare metal)
+- `qemu` (for running the OS)
+
+## 🛠 Build Instructions
+
+To build the OS:
+```bash
+make clean
+./build.sh
+cd bin
+qemu-system-x86_64 -hda bin/os.bin
+
