@@ -38,5 +38,5 @@ To Build the OS:
 To Run the OS:
 ```bash
 cd bin
-qemu-system-x86_64 -hda bin/os.bin
+qemu-system-i386 -hda ./os.bin
 
